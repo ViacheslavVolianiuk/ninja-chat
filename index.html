@@ -52,9 +52,28 @@
             <input type="submit" class="btn" value="update" />
           </div>
         </div>
-        <div class="update-mssg"></div>
+        <div class="update-mssg text-center my-2"></div>
       </form>
     </div>
+    <script src="http://cdn.date-fns.org/v1.9.0/date_fns.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script>
+      // const firebase = require("firebase");
+      // Required for side-effects
+      // require("firebase/firestore");
+      firebase.initializeApp({
+        apiKey: "AIzaSyA7NMr0DiymjW6LpCafj1b7P_l7Ob9Jc5Y",
+        authDomain: "udemy-course-js.firebaseapp.com",
+        projectId: "udemy-course-js",
+        storageBucket: "udemy-course-js.appspot.com",
+        messagingSenderId: "16087448779",
+        appId: "1:16087448779:web:169b747ab6842679f06f4e",
+        measurementId: "G-WLKV28ERFS",
+      });
+
+      const db = firebase.firestore();
+    </script>
 
     <script src="scripts/chat.js"></script>
     <script src="scripts/ui.js"></script>
